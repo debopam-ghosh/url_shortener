@@ -24,3 +24,11 @@ The system is divided into two primary components to ensure **Separation of Conc
 Run the main application to initialize the database and shorten your first URL:
 ```bash
 python app.py
+
+To add the cron job, run:
+
+crontab -e
+Then, paste this line at the bottom of the file:
+
+
+0 * * * * /usr/bin/python3 /absolute/path/to/janitor.py
